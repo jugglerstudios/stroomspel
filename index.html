@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <style>body{font-family: Verdana;
-      background-image: rgb(207,207,207);
-      background-image: -moz-linear-gradient(90deg, rgba(207,207,207,1) 0%, rgba(159,159,159,1) 85%);
-      background-image: -webkit-linear-gradient(90deg, rgba(207,207,207,1) 0%, rgba(159,159,159,1) 85%);
-      background-image: linear-gradient(90deg, rgba(207,207,207,1) 0%, rgba(159,159,159,1) 85%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cfcfcf",endColorstr="#9f9f9f",GradientType=1);
-      }
-    
-    
-    
-    
-    </style>
-    <body><center>
-      <h1>welkom op deze website, op deze website zijn 2 schoolprojecten te vinden in opdracht van GameDidactiek.</h1></p>
-      
-      <a href="stroomspel.html">ga naar stroomspel</a></p>
-      <a href="energiespel.html">ga naar energiespel</a>
-        </center></body>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Energy Ball 2</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/builds.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Energy Ball 2</div>
+      </div>
+    </div>
+  </body>
 </html>
